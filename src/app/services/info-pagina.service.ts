@@ -17,21 +17,21 @@ export class InfoPaginaService {
 
   private cargarInfo(){
 
-    console.log('Servicio de infoPaginaListo');
+    // console.log('Servicio de infoPaginaListo');
     this.http.get('/assets/data/data-folder.json').subscribe((resp: InfoPagina) => {
       this.cargada = true;
       this.info = resp;
-      console.log(resp);
+      // console.log(resp);
     });
 
   }
 
   private cargarEquipo(){
 
-    console.log('Servicio de infoPaginaListo');
+    // console.log('Servicio de infoPaginaListo');
     this.http.get('https://angular-html-73eb9.firebaseio.com/equipo.json').subscribe((resp: any[]) => {
       this.equipo = resp;
-      console.log(resp);
+      // console.log(resp);
     });
 
   }
